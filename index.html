@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Tag -->
+    <title>Biker Heaven - A Modern Responsive Landing Page Using TailwindCSS</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS & Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <!-- Custom Tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#E76F51',
+                'banner-bg': '#E76F511A',
+              }
+            }
+          }
+        }
+      </script>
+
+
+</head>
+<body class="font-poppins">
+    <!-- Header Area Design -->
+    <header>
+        <div class="container mx-auto px-2 md:px-16 lg:px-24">
+            <nav>
+                <div class="navbar bg-base-100">
+                    <div class="flex-1">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-medium">
+                            <li><a class="hover:text-primary-color hover:font-semibold duration-300">Home</a></li>
+                            <li><a class="hover:text-primary-color hover:font-semibold duration-300">Shop</a></li>
+                            <li><a class="hover:text-primary-color hover:font-semibold duration-300">News</a></li>
+                            <li><a class="hover:text-primary-color hover:font-semibold duration-300">Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class="cursor-pointer text-xl md:text-2xl lg:text-4xl font-semibold text-[#000]">Biker Heaven</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-base font-medium">
+                        <li><a class="hover:text-primary-color hover:font-semibold duration-300">Home</a></li>
+                        <li><a class="hover:text-primary-color hover:font-semibold duration-300">Shop</a></li>
+                        <li><a class="hover:text-primary-color hover:font-semibold duration-300">News</a></li>
+                        <li><a class="hover:text-primary-color hover:font-semibold duration-300">Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="ml-3">
+                      <a class="btn px-6 md:px-8 bg-primary-color text-white hover:bg-transparent hover:text-primary-color hover:border-[1px] hover:border-primary-color duration-500">Login</a>
+                    </div>
+                  </div>
+            </nav>
+
+    <!-- Banner Area Design -->
+        <div>
+            <div class="carousel w-full">
+                <!-- Slider-01 -->
+                <div id="slide1" class="carousel-item relative w-full bg-banner-bg h-[520px] rounded-lg">
+                  
+                    <div class="flex justify-between flex-col lg:flex-row items-center gap-5 p-10 lg:px-28">
+                        <div class="flex-1 space-y-4">
+                            <h1 class="text-[#000] text-3xl md:text-4xl lg:text-6xl font-semibold leading-tight text-center md:text-left">Ride-on R15 V4 with Smile</h1>
+                            <p class="text-sm opacity-70 leading-7 text-center md:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <div class="flex justify-center md:justify-start">
+                                <a class="btn px-6 md:px-8 bg-primary-color text-white hover:bg-transparent hover:text-primary-color hover:border-[1px] hover:border-primary-color duration-500">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <img class="w-[75%] md:w-auto mx-auto" src="./images/slider/bike1.png" alt="Bike">
+                        </div>
+                    </div>
+                    
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- Slider-02 -->
+                <div id="slide2" class="carousel-item relative w-full bg-banner-bg h-[520px] rounded-lg">
+                  
+                    <div class="flex justify-between flex-col lg:flex-row items-center gap-5 p-10 lg:px-28">
+                        <div class="flex-1 space-y-4">
+                            <h1 class="text-[#000] text-3xl md:text-4xl lg:text-6xl font-semibold leading-tight text-center md:text-left">Ride-on R15 V4 with Smile</h1>
+                            <p class="text-sm opacity-70 leading-7 text-center md:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <div class="flex justify-center md:justify-start">
+                                <a class="btn px-6 md:px-8 bg-primary-color text-white hover:bg-transparent hover:text-primary-color hover:border-[1px] hover:border-primary-color duration-500">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <img class="w-[75%] md:w-auto mx-auto" src="./images/slider/bike2.png" alt="Bike">
+                        </div>
+                    </div>
+                    
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- Slider-03 -->
+                <div id="slide3" class="carousel-item relative w-full bg-banner-bg h-[520px] rounded-lg">
+                  
+                    <div class="flex justify-between flex-col lg:flex-row items-center gap-5 p-10 lg:px-28">
+                        <div class="flex-1 space-y-4">
+                            <h1 class="text-[#000] text-3xl md:text-4xl lg:text-6xl font-semibold leading-tight text-center md:text-left">Ride-on R15 V4 with Smile</h1>
+                            <p class="text-sm opacity-70 leading-7 text-center md:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <div class="flex justify-center md:justify-start">
+                                <a class="btn px-6 md:px-8 bg-primary-color text-white hover:bg-transparent hover:text-primary-color hover:border-[1px] hover:border-primary-color duration-500">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <img class="w-[75%] md:w-auto mx-auto" src="./images/slider/bike3.png" alt="Bike">
+                        </div>
+                    </div>
+                    
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- Slider-04 -->
+                <div id="slide4" class="carousel-item relative w-full bg-banner-bg h-[520px] rounded-lg">
+                  
+                    <div class="flex justify-between flex-col lg:flex-row items-center gap-5 p-10 lg:px-28">
+                        <div class="flex-1 space-y-4">
+                            <h1 class="text-[#000] text-3xl md:text-4xl lg:text-6xl font-semibold leading-tight text-center md:text-left">Ride-on R15 V4 with Smile</h1>
+                            <p class="text-sm opacity-70 leading-7 text-center md:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <div class="flex justify-center md:justify-start">
+                                <a class="btn px-6 md:px-8 bg-primary-color text-white hover:bg-transparent hover:text-primary-color hover:border-[1px] hover:border-primary-color duration-500">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <img class="w-[75%] md:w-auto mx-auto" src="./images/slider/bike4.png" alt="Bike">
+                        </div>
+                    </div>
+                    
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Main Area Design -->
+    <main>
+        
+    </main>
+
+    <!-- Footer Area Design -->
+    <footer>
+
+    </footer>
+
+</body>
+</html>
